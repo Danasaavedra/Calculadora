@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffff
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url(img/snoopy.jpg) center/ cover no-repeat;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.container {
+    width: 35%;
+    height: 90%;
+    background-color: #3E4650;
+    border: 3px solid darkgray;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10%;
+    transition: 0.3s;
+}
+
+.container:hover {
+    box-shadow: 0 0 10px #3E4650;
+}
+
+.display {
+    width: 93%;
+    height: 15%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+
+#resultado {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size:  10vh;
+}
+
+.boton {
+    width: 97%;
+    height: 39%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    justify-content: center;
+    user-select: none;
+}
+
+.numero {
+    background-color: #060606;
+    transition: 0.4s;
+}
+
+.numero:hover {
+    background: url(img/boton-hover.jpg) center/ cover no-repeat ;
+}
+
+.operador {
+    background-color: gray;
+    transition: 0.4s;
+}
+
+.operador:hover {
+    background: lightgray;
+}
+
+.numero:active, .operador:active {
+    transform: scale(0.95);
+}
+
+.numero, .operador {
+    width: 20%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+    border-radius: 10%;
+}
+
+.operador:last-child {
+    width: 45%;
+    border-radius: 7%;
+    background-color: #3C6985;
+    transition: 0.4s;
+    font-size: 10vh;
+}
+
+.operador:last-child:hover {
+    background: #467A9A;
+    
+}
